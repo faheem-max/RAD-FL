@@ -1,1 +1,3 @@
-
+These have two things
+one is to run with fix learning rate and on that you have to take the config file accordingly
+for the learning rate decay you have to do run the hardware_training_client_lr_decay.py file in nodes (devices) and take the config file accordingly which are already in config folder
