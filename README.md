@@ -54,3 +54,11 @@ RAD-FL/
 │   └── http_server.py
 │
 └── requirement.txt
+
+
+
+\bibitem{radfl}
+F. U. Rehman, ``RAD-FL: Resource-aware dynamic topology learning for
+communication-efficient decentralized federated learning on heterogeneous
+on-device physical AI platforms,'' GitHub repository, 2026.
+[Online]. Available: \url{https://github.com/faheem-max/RAD-FL}
