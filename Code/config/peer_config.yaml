@@ -1,0 +1,103 @@
+{
+  "peers": {
+    "1": {
+      "device_name": "ubuntu",
+      "ssh_user": "ubuntu",
+      "hardware_type": "Raspberry Pi 5",
+      "clique_id": 1,
+      "ip": "192.168.0.2",
+      "port": 5001,
+      "dataset_path": "/home/ubuntu/distributed_avg/dataset",
+      "expected_device": "cpu",
+       "local_train_samples: 2513"
+
+    },
+    "2": {
+      "device_name": "ubuntu",
+      "ssh_user": "ubuntu",
+      "hardware_type": "Raspberry Pi 5",
+      "clique_id": 1,
+      "ip": "192.168.0.3",
+      "port": 5002,
+      "dataset_path": "/home/ubuntu/distributed_avg/dataset",
+      "expected_device": "cpu",
+       "local_train_samples: 3430"
+
+    },
+    "3": {
+      "device_name": "node_c_jatson_1",
+      "ssh_user": "node_c_jatson_1",
+      "hardware_type": "NVIDIA Jetson Orin Nano",
+      "clique_id": 1,
+      "ip": "192.168.0.12",
+      "port": 5003,
+      "dataset_path": "/home/node_c_jatson_1/distributed_avg/dataset",
+      "expected_device": "cuda",
+      "local_train_samples: 12894"
+    },
+    "4": {
+      "device_name": "node-d",
+      "ssh_user": "node-d",
+      "hardware_type": "NVIDIA Jetson Orin Nano",
+      "clique_id": 1,
+      "ip": "192.168.0.13",
+      "port": 5004,
+      "dataset_path": "/home/node-d/distributed_avg/dataset",
+      "expected_device": "cuda",
+      "local_train_samples: 7826"
+    },
+    "5": {
+      "device_name": "ubuntu",
+      "ssh_user": "ubuntu",
+      "hardware_type": "NVIDIA Jetson Orin Nano",
+      "clique_id": 2,
+      "ip": "192.168.0.30",
+      "port": 5005,
+      "dataset_path": "/home/ubuntu/distributed_avg/dataset",
+      "expected_device": "cuda",
+      "local_train_samples: 7634"
+    },
+    "6": {
+      "device_name": "faheem",
+      "ssh_user": "faheem",
+      "hardware_type": "NVIDIA Jetson Orin Nano",
+      "clique_id": 2,
+      "ip": "192.168.0.29",
+      "port": 5006,
+      "dataset_path": "/home/faheem/distributed_avg/dataset",
+      "expected_device": "cuda",
+	    "local_train_samples: 8237"
+
+    },
+    "7": {
+      "device_name": "ubuntu",
+      "ssh_user": "ubuntu",
+      "hardware_type": "Raspberry Pi 5",
+      "clique_id": 2,
+      "ip": "192.168.0.4",
+      "port": 5007,
+      "dataset_path": "/home/ubuntu/distributed_avg/dataset",
+      "expected_device": "cpu",
+	    "local_train_samples: 3452"
+    },
+    "8": {
+      "device_name": "ubuntu",
+      "ssh_user": "ubuntu",
+      "hardware_type": "Raspberry Pi 5",
+      "clique_id": 2,
+      "ip": "192.168.0.5",
+      "port": 5008,
+      "dataset_path": "/home/ubuntu/distributed_avg/dataset",
+      "expected_device": "cpu",
+	    "local_train_samples: 3514"
+    }
+  },
+  "network": {
+    "startup_health_timeout_seconds": 180,
+    "timeout_seconds": 10,
+    "retry_attempts": 2,
+    "poll_interval_seconds": 0.1,
+    "max_model_bytes": 104857600,
+    "max_rounds_in_memory": 10
+  }
+}

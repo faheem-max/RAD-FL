@@ -1,0 +1,44 @@
+experiment:
+  method: proposed_dclique
+  run_id: proposed_hybrid_seed45_100round
+  seed: 45
+
+
+startup:
+  coordinator_client_id: 1
+  startup_health_timeout_seconds: 240
+  initialization_timeout_seconds: 240
+  barrier_timeout_seconds: 240
+  start_lead_seconds: 8.0
+  strict_expected_device: true
+  checkpoint_dir: checkpoints
+  log_dir: logs
+
+training:
+  num_rounds: 100
+  local_epochs: 3
+  batch_size: 64
+  eval_batch_size: 256
+  learning_rate: 0.01
+  round_timeout_seconds: 900
+  finalization_timeout_seconds: 180
+
+topology:
+  num_cliques: 2
+  k_inter: 2
+  mu: 0.6
+  beta_g: 0.2
+  straggler_quantile: 0.85
+  delta_max: 0.15
+  update_interval: 5
+  rtt_samples: 3
+
+aggregation:
+  mode: hybrid
+  alpha: 0.5
+
+evaluation:
+  global_validation_file: global_validation.pt
+  global_test_file: global_test.pt
+  global_validation_every_round: true
+  global_test_final_round_only: true
